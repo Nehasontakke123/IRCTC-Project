@@ -14,7 +14,7 @@ const EmergencyRequests = () => {
   const fetchRequests = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/emergency-help/requests" // Change this for production
+        "https://irctc-backend-fyr2.vercel.app/emergency-help/requests" // Change this for production
       );
       setRequests(response.data);
     } catch (error) {

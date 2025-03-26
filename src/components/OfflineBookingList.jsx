@@ -9,7 +9,7 @@ const OfflineBookingList = () => {
   useEffect(() => {
     const fetchOfflineBookings = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/offline-booking/all");
+        const response = await axios.get("https://irctc-backend-fyr2.vercel.app/offline-booking/all");
         console.log("📌 Fetched Bookings:", response.data); // Debugging
         setBookings(response.data || []); // 🛠 Handle Empty Response
       } catch (error) {

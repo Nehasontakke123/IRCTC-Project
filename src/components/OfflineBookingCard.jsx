@@ -20,7 +20,7 @@ const OfflineBookingCard = ({ booking, onCancel, onSync }) => {
     setSyncing(true);
     try {
       const response = await axios.put(
-        `http://localhost:5000/offline-booking/update-status/${booking._id}`,
+        `https://irctc-backend-fyr2.vercel.app/offline-booking/update-status/${booking._id}`,
         { status: "Synced" }
       );
 

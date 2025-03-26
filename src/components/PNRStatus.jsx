@@ -28,7 +28,7 @@ const PNRStatus = () => {
 
     // 🚆 Fetch PNR Status
     const checkPNRStatus = async () => {
-        const response = await fetch(`http://localhost:5000/api/bookings/pnr-status/${pnr}`);
+        const response = await fetch(`https://irctc-backend-fyr2.vercel.app/api/bookings/pnr-status/${pnr}`);
         const data = await response.json();
         setStatus(data);
     };

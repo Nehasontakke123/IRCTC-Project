@@ -44,7 +44,7 @@ const OfflineBookingForm = () => {
     console.log("Sending Data:", formData); // Debugging line
 
     try {
-      const response = await axios.post("http://localhost:5000/offline-booking/create", formData, {
+      const response = await axios.post("https://irctc-backend-fyr2.vercel.app/offline-booking/create", formData, {
         headers: { "Content-Type": "application/json" },
       });
 
@@ -69,7 +69,7 @@ const OfflineBookingForm = () => {
   // Fetch Offline Bookings
   const fetchOfflineBookings = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/offline-booking/all");
+      const response = await axios.get("https://irctc-backend-fyr2.vercel.app/offline-booking/all");
       setOfflineBookings(response.data);
     } catch (error) {
       console.error("Error fetching offline bookings:", error);

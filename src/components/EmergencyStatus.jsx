@@ -17,7 +17,7 @@ const EmergencyStatus = ({ requestId }) => {
   
     const fetchStatus = async () => {
   try {
-    const response = await fetch(`http://localhost:5000/emergency-help/status/${requestId}`);
+    const response = await fetch(`https://irctc-backend-fyr2.vercel.app/emergency-help/status/${requestId}`);
     const data = await response.json();
     console.log("Fetched Data:", data); 
 
@@ -42,7 +42,7 @@ const EmergencyStatus = ({ requestId }) => {
     setSuccess(null);
 
     try {
-      const response = await fetch(`http://localhost:5000/emergency-help/status/${requestId}`, {
+      const response = await fetch(`https://irctc-backend-fyr2.vercel.app/emergency-help/status/${requestId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: newStatus }),

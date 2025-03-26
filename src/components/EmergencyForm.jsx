@@ -49,7 +49,7 @@ const EmergencyForm = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/emergency-help/send`,
+        `https://irctc-backend-fyr2.vercel.app/emergency-help/send`,
         formData,
         {
           headers: { "Content-Type": "application/json" },

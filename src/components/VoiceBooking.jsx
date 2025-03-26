@@ -7,7 +7,7 @@ const VoiceBooking = () => {
 
     const handleBookTicket = async () => {
         try {
-            const res = await axios.post("http://localhost:5000/api/book-ticket/voice", { voiceText, userId: "12345" });
+            const res = await axios.post("https://irctc-backend-fyr2.vercel.app/api/book-ticket/voice", { voiceText, userId: "12345" });
             setMessage(`Ticket booked! PNR: ${res.data.ticket.pnr}`);
         } catch (error) {
             setMessage("Error booking ticket!");

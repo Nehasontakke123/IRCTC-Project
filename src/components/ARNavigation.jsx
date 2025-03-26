@@ -8,7 +8,7 @@ const ARNavigation = ({ stationName }) => {
   useEffect(() => {
     const fetchStation = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/stations/${stationName}/ar`);
+        const response = await axios.get(`https://irctc-backend-fyr2.vercel.app/api/stations/${stationName}/ar`);
         setStation(response.data);
       } catch (err) {
         console.error("Error fetching station:", err);

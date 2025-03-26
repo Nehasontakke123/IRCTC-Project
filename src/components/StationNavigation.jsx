@@ -69,7 +69,7 @@ const StationNavigation = ({ stationName }) => {
     const fetchStation = async () => {
       try {
         const encodedStationName = encodeURIComponent(stationName);
-        const res = await axios.get(`http://localhost:5000/api/stations/${encodedStationName}`);
+        const res = await axios.get(`https://irctc-backend-fyr2.vercel.app/api/stations/${encodedStationName}`);
         
         console.log("Fetched Station Data:", res.data);
         setStation(res.data);
