@@ -1,0 +1,227 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f7f9fc;
+  }
+  
+  .form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    margin-top: -200px
+  }
+  
+  .heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #002244;
+  }
+  
+  .label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #002244;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .error {
+    color: #d9534f;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .captchaContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002244;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  
+  .captcha {
+    flex: 1;
+  }
+  
+  .refreshBtn {
+    background-color: #002244;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .submitBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #002244;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #28a745;
+  }
+
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form, .agent-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .submitBtn, .toggleBtn, .backBtn, .agreeBtn, .cancelBtn {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submitBtn {
+    background: #002244;
+    color: white;
+  }
+  
+  .toggleBtn {
+    background: #002244;
+    color: white;
+  }
+  
+  .backBtn {
+    background: #002244;
+    color: white;
+  }
+  
+  /* Popup Styling */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .popup-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    
+  }
+  
+  .agreeBtn {
+    background: #002244;
+    color: white;
+  }
+  
+  .cancelBtn {
+    background: #002244;
+    color: white;
+  }
+  
+  
+
+
+
+  .agent-container {
+    display: flex;
+    flex-direction: column;
+    background: white; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 400px; 
+    text-align: center;
+    margin-top: -180px; 
+}
+
+
+.agent-container h2 {
+    color:#002244;
+    font-size: 22px;
+}
+
+/* Agent Login च्या बटणांसाठी सुधारित स्टाइल */
+.agent-container .submitBtn, 
+.agent-container .backBtn {
+    background: #002244; /* Login form प्रमाणेच */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+.agent-container .submitBtn:hover, 
+.agent-container .backBtn:hover {
+    background: #002244;
+}
+

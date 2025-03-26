@@ -1,0 +1,117 @@
+/* Booking Form Container */
+.booking-form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff; /* Solid white background for visibility */
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+}
+
+/* Form Title */
+.booking-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #222;
+    font-weight: bold;
+}
+
+/* Input Fields */
+.booking-form-container input,
+.booking-form-container select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.booking-form-container input:focus,
+.booking-form-container select:focus {
+    border-color: #00b4d8;
+    box-shadow: 0px 0px 8px rgba(0, 180, 216, 0.5);
+}
+
+/* Passenger Group */
+.passenger-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f1f1f1;
+}
+
+/* Remove Passenger Button */
+.remove-passenger {
+    background: #ff4b4b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.remove-passenger:hover {
+    background: #d73838;
+}
+
+/* Add Passenger Button */
+.add-passenger {
+    background: #00b4d8;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.add-passenger:hover {
+    background: #0096c7;
+}
+
+/* Submit Booking Button */
+.submit-booking {
+    background: #48c78e;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.submit-booking:hover {
+    background: #3ba676;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .passenger-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .remove-passenger {
+        width: 100%;
+        height: 35px;
+        border-radius: 8px;
+    }
+}

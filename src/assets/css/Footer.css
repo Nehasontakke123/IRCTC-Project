@@ -1,0 +1,111 @@
+.footer {
+   
+    background: linear-gradient(to right, #5a1c8b, #92278f);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Social Media Section */
+.footer-top {
+    background: #1e0e56;
+    padding: 15px 10px;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.footer-top p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/* Social Icons */
+.facebook { background: url("https://cdn-icons-png.flaticon.com/512/124/124010.png") no-repeat center/cover; }
+.whatsapp { background: url("https://cdn-icons-png.flaticon.com/512/124/124034.png") no-repeat center/cover; }
+.youtube { background: url("https://cdn-icons-png.flaticon.com/512/1384/1384060.png") no-repeat center/cover; }
+.instagram { background: url("https://cdn-icons-png.flaticon.com/512/2111/2111463.png") no-repeat center/cover; }
+.linkedin { background: url("https://cdn-icons-png.flaticon.com/512/124/124011.png") no-repeat center/cover; }
+.telegram { background: url("https://cdn-icons-png.flaticon.com/512/2111/2111646.png") no-repeat center/cover; }
+.pinterest { background: url("https://cdn-icons-png.flaticon.com/512/124/124021.png") no-repeat center/cover; }
+.tumblr { background: url("https://cdn-icons-png.flaticon.com/512/124/124033.png") no-repeat center/cover; }
+.duck { background: url("https://cdn-icons-png.flaticon.com/512/5968/5968757.png") no-repeat center/cover; }
+.twitter { background: url("https://cdn-icons-png.flaticon.com/512/124/124021.png") no-repeat center/cover; }
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.link-column {
+    text-align: left;
+    margin: 10px;
+}
+
+.link-column h3 {
+    font-size: 16px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link-column h3:hover {
+    color: #ffcc00;
+}
+
+/* Copyright Section */
+.footer-bottom {
+    padding: 10px;
+    font-size: 14px;
+    background: #240d61;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link-column {
+        text-align: center;
+    }
+    
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .footer-top p {
+        font-size: 14px;
+    }
+}

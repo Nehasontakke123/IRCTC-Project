@@ -1,0 +1,347 @@
+/* Home Page Styles */
+.home {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+}
+
+/* Background Slider */
+.home__slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.home__slider-image {
+  width: 100%;
+  height: 89%;
+  object-fit: cover;
+}
+
+/* Scrolling Welcome Banner */
+.marquee-container {
+  width: 100%;
+  background-color: #003366; /* Dark blue like Indian Railways */
+  color: white;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Marquee Content (Scrolling Effect) */
+.marquee-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  animation: scroll-text 10s linear infinite;
+}
+
+/* Keyframe Animation for Scrolling */
+@keyframes scroll-text {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Railway Icons */
+.marquee-icon {
+  font-size: 24px;
+  color: yellow; /* Golden Yellow like railway logo */
+}
+
+
+/* Popup */
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.popup__close-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.popup__close-btn:hover {
+  background: #cc5200;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home__overlay {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .marquee-content {
+    font-size: 18px;
+  }
+
+  .home__btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home__overlay {
+    width: 95%;
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .home__form-title {
+    font-size: 22px;
+  }
+
+  .marquee-content {
+    font-size: 16px;
+  }
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: #003366;
+  color: white;
+  padding: 10px 0;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: bold;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-icon {
+  font-size: 24px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-popup-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-popup-btn:hover {
+  background: darkred;
+}
+
+
+
+.home__overlay {
+  display: flex;
+  flex-direction: column; /* Ensures elements stack properly */
+  justify-content: center;
+  align-items: center; /* Center items horizontally */
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Moves the form to the left side */
+  transform: translateY(-50%); /* Center the form vertically */
+  width: 90%;
+  max-width: 450px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff; /* White background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center text and elements */
+  transition: all 0.3s ease-in-out;
+}
+
+.home__form {
+  width: 100%;
+}
+
+.home__form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:#002244;
+}
+
+.home__form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased spacing for better alignment */
+  width: 100%;
+}
+
+.home__form input,
+.home__form select {
+  width: 100%; /* Full width */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f9f9f9;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.home__form input::placeholder {
+  color: #888;
+}
+
+.home__form input:focus,
+.home__form select:focus {
+  background: #fff;
+  border-color:  #002244;
+  box-shadow: #002244;
+}
+
+.home__form select {
+  cursor: pointer;
+}
+
+.home__form button {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #002244;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%; /* Make button fill the form width */
+  margin-bottom: 10px; /* Add space between buttons */
+}
+
+.home__form button:hover {
+  transform: scale(1.05);
+  box-shadow: #002244;
+}
+
+.home__form button:active {
+  transform: scale(0.95);
+}
+
+/* Center the buttons inside the form */
+.home__form button:last-child {
+  width: auto; /* Ensure the voice command button doesn't stretch */
+  margin-top: 10px;
+  align-self: center; /* Center the last button horizontally */
+}
+
+@media (max-width: 600px) {
+  .home__overlay {
+    left: 5%; /* Adjusted left position for small screens */
+    width: 95%;
+    max-width: 400px;
+    transform: translateY(-50%);
+  }
+
+  .home__form h2 {
+    font-size: 20px;
+  }
+
+  .home__form input,
+  .home__form select,
+  .home__form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+

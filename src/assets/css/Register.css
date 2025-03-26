@@ -1,0 +1,69 @@
+/* Register Page CSS */
+
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.register-container h2 {
+    color: #002244;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    color: #002244;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.register-container input::placeholder {
+    color: #aaa;
+}
+
+.register-container input:focus {
+    background: #fff;
+    border-color: #002244;
+}
+
+.register-container button {
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #002244;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-container button:hover {
+    background: #002244;
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        width: 90%;
+    }
+}

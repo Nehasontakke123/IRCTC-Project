@@ -1,0 +1,266 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Container */
+nav {
+    display: flex;
+    flex-direction: column; /* Stacks top and bottom nav */
+    background-color: white;
+    padding: 12px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Top Navbar - Center Everything */
+.top-nav {
+    display: flex;
+    flex-direction: column; /* Stack logo & nav-links */
+    align-items: center; /* Center items */
+    justify-content: center; /* Centers everything horizontally */
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 70px;
+    width: auto;
+    margin-bottom: 10px; /* Space below logo */
+}
+.Second-logo img{
+    height: 70px;
+    width: auto;
+    margin-bottom: 10px; /* Space below logo */
+}
+
+/* Navigation Links - Center */
+.nav-links {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Adjust spacing */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Navigation Links Styling */
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+/* Active and Hover Effects */
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+/* Special Buttons */
+.button-primary {
+    background-color: gray;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.button-primary:hover {
+    background-color: #002244;
+}
+
+.alert-button {
+    background-color: gray;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.alert-button:hover {
+    background-color: darkgray;
+}
+
+/* IRCTC Exclusive Button */
+.irctc-button {
+    background-color: gray;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.irctc-button:hover {
+    background-color: #001122;
+}
+
+/* Bottom Navbar - Center */
+.bottom-nav {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    width: 100%;
+    margin-bottom: 1px;
+    /* padding-top: 10px; */
+    /* border-top: 1px solid #ddd; */
+}
+
+
+/* Reduce space between top-nav and bottom-nav */
+.top-nav {
+    display: flex;
+    justify-content: center; /* Center align items */
+    align-items: center;
+    width: 100%;
+    padding: 3px 0; /* Reduce padding */
+    flex-wrap: wrap;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3px; /* Reduce top padding */
+    /* border-top: 1px solid #ddd; */
+    margin-top: -5px; /* Move bottom-nav closer to top-nav */
+}
+
+/* Adjust spacing in nav-links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Reduce space between links */
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 3px 0; /* Reduce padding */
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .top-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+
+
+/* Remove scrolling from the entire page */
+html, body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: auto; /* Allows vertical scrolling when necessary */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Ensure no element causes horizontal overflow */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ensure Navbar does not overflow */
+nav {
+    width: 100%;
+    overflow: hidden; /* Hide any extra content */
+}
+
+/* Fix flex container overflow */
+.nav-links {
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+
+
+
+/* Navbar Container */
+nav {
+    padding: 5px 15px; /* कमी padding */
+}
+
+/* 🔹 Top Navbar */
+.top-nav {
+    padding: 5px 0; /* कमी vertical padding */
+}
+
+/* 🔹 Logo Size कमी */
+.logo img,
+.Second-logo img {
+    height: 50px; /* 70px ऐवजी 50px */
+    margin-bottom: 5px; /* खालील space कमी */
+}
+
+/* 🔹 Navigation Links */
+.nav-links {
+    padding: 5px 0; /* कमी padding */
+    gap: 8px; /* Links मधील अंतर कमी */
+}
+
+.nav-links a {
+    font-size: 13px; /* Font थोडा लहान */
+    padding: 6px 10px; /* कमी spacing */
+}
+
+/* 🔹 Bottom Navbar */
+.bottom-nav {
+    padding-top: 2px; /* कमी space */
+    margin-top: -3px; /* वरून जवळ आणले */
+}
+
+/* 🔹 Buttons - कमी size */
+.button-primary,
+.alert-button,
+.irctc-button {
+    padding: 5px 10px; /* कमी padding */
+    font-size: 13px; /* कमी font size */
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+    .top-nav, .bottom-nav {
+        padding: 3px 0; /* Mobile साठी कमी spacing */
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+}
+
+
+
+.contact-button {
+   
+    color: black;
+    text-decoration: none;
+    font-size: 13px; /* Adjust to match other buttons */
+    padding: 5px 10px; /* Reduce padding */
+    font-weight: bold; /* Match others */
+     cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    color: #ff6600
+  }
+  
